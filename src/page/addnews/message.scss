@@ -1,0 +1,134 @@
+ .news-list {
+   padding: 20px;
+   .clearfix {
+     &:after {
+       clear: both;
+       content: "";
+       display: block;
+       height: 0px;
+     }
+     .cancelbtn {
+       float: left;
+     }
+     .savebtn {
+       float: right;
+     }
+   }
+
+   .to-show-news {
+     background: #fff;
+     padding: 20px;
+     .text-left {
+       text-align: left;
+     }
+     .newlist-ul {
+       margin-bottom: 10px;
+       .newlist-li {
+         height: 50px;
+         overflow: hidden;
+         cursor: pointer;
+         list-style: none;
+         border-bottom: 1px solid #eee;
+         &:hover {
+           color: blue;
+         }
+         p {
+           position: relative;
+           padding-right: 120px;
+           text-align: left;
+           padding-left: 20px;
+           line-height: 50px;
+           span {
+             display: inline-block;
+             position: absolute;
+             right: 20px;
+             top: 0px;
+             color: #ccc;
+           }
+         }
+       }
+     }
+     .news-info {
+       position: relative;
+       .news-content-top-header {
+         height: 40px;
+         line-height: 40px;
+         width: 100%;
+         border-bottom: 1px solid #dededb;
+         .goback-btn {
+           position: absolute;
+           left: 0px;
+           top: 5px;
+           font-size: 14px;
+           width: 70px;
+           height: 30px;
+         }
+         .news-title {}
+       }
+       .news-time-con {
+         padding-top: 10px;
+         padding-bottom: 20px;
+         text-align: center;
+         font-size: 14px;
+         color: #b7b7b5;
+       }
+       .message-content-body {
+         position: relative;
+         .message-content {
+           padding: 10px 20px;
+         }
+       }
+     }
+   }
+ }
+
+
+
+
+
+ .back-message-list-enter,
+ .back-message-list-leave-to {
+   opacity: 0;
+ }
+
+ .back-message-list-enter-active,
+ .back-message-list-leave-active {
+   transition: all .5s;
+ }
+
+ .back-message-list-enter-to,
+ .back-message-list-leave {
+   opacity: 1;
+ }
+
+ .view-message-enter,
+ .view-message-leave-to {
+   opacity: 0;
+ }
+
+ .view-message-enter-active,
+ .view-message-leave-active {
+   transition: all .5s;
+ }
+
+ .view-message-enter-to,
+ .view-message-leave {
+   opacity: 1;
+ }
+
+ .mes-current-type-btn-enter,
+ .mes-current-type-btn-leave-to {
+   opacity: 0;
+   width: 0;
+ }
+
+ .mes-current-type-btn-enter-active,
+ .mes-current-type-btn-leave-active {
+   transition: all .3s;
+ }
+
+ .mes-current-type-btn-enter-to,
+ .mes-current-type-btn-leave {
+   opacity: 1;
+   width: 12px;
+ }
